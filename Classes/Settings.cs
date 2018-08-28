@@ -45,6 +45,7 @@ namespace AudioSwitch.Classes
         [XmlElement] public EDataFlow DefaultDataFlow;
         [XmlElement] public bool DefaultMultimediaAndComm;
         [XmlElement] public bool ColorVU;
+        [XmlElement] public bool DarkTheme;
         [XmlElement] public bool ShowHardwareName;
         [XmlElement] public bool QuickSwitchEnabled;
         [XmlElement] public bool QuickSwitchShowOSD;

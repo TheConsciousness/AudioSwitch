@@ -78,8 +78,8 @@ namespace AudioSwitch.Forms
             InitializeComponent();
             
             IsWin10 = Environment.OSVersion.Version.Major == 10;
-            if (IsWin10)
-                FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            //if (IsWin10)
+            //    FormBorderStyle = FormBorderStyle.FixedToolWindow;
             SetWindowTheme(listDevices.Handle, "explorer", null);
 
             ledLeft.OldStyle = Program.settings.ColorVU;
@@ -439,6 +439,16 @@ namespace AudioSwitch.Forms
 
             if (DeactivatedOnIcon)
                 return;
+            
+            if (Program.settings.DarkTheme)
+            {
+                ledLeft.BackColor = Color.FromArgb(18, 18, 18);
+                ledRight.BackColor = Color.FromArgb(18, 18, 18);
+                VolBar.BackColor = Color.FromArgb(18, 18, 18);
+                this.BackColor = Color.FromArgb(18, 18, 18);
+                listDevices.BackColor = Color.FromArgb(18, 18, 18);
+                listDevices.ForeColor = Color.White;
+            }
 
             SetSizes();
         }

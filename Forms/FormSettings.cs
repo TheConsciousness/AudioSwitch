@@ -45,6 +45,7 @@ namespace AudioSwitch.Forms
             comboDefMode.Text = Program.settings.DefaultDataFlow == EDataFlow.eCapture ? "Recording" : "Playback";
             checkDefaultMultiAndComm.Checked = Program.settings.DefaultMultimediaAndComm;
             checkColorVU.Checked = Program.settings.ColorVU;
+            checkDarkTheme.Checked = Program.settings.DarkTheme;
             checkVolScroll.Checked = Program.settings.VolumeScroll.Enabled;
             comboScrollKey.Text = Program.settings.VolumeScroll.Key.ToString();
             checkScrShowOSD.Checked = Program.settings.VolumeScroll.ShowOSD;
@@ -133,6 +134,7 @@ namespace AudioSwitch.Forms
 
             Program.settings.DefaultMultimediaAndComm = checkDefaultMultiAndComm.Checked;
             Program.settings.ColorVU = checkColorVU.Checked;
+            Program.settings.DarkTheme = checkDarkTheme.Checked;
             Program.settings.ShowHardwareName = checkShowHWName.Checked;
             Program.settings.QuickSwitchEnabled = radioQuickSwitch.Checked;
             Program.settings.QuickSwitchShowOSD = checkQSShowOSD.Checked;
@@ -252,5 +254,6 @@ namespace AudioSwitch.Forms
                 Program.settings.FreePosTop = 0;
             }
         }
+        
     }
 }

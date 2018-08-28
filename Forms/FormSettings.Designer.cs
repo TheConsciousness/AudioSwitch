@@ -32,7 +32,7 @@ namespace AudioSwitch.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabGeneral = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -78,6 +78,7 @@ namespace AudioSwitch.Forms
             this.HotKey = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.buttonClose = new System.Windows.Forms.Button();
             this.labelTips = new System.Windows.Forms.Label();
+            this.checkDarkTheme = new System.Windows.Forms.CheckBox();
             this.playbackDevices = new AudioSwitch.Controls.Devices();
             this.recordingDevices = new AudioSwitch.Controls.Devices();
             this.tabControl.SuspendLayout();
@@ -105,20 +106,22 @@ namespace AudioSwitch.Forms
             this.tabControl.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(536, 352);
+            this.tabControl.Size = new System.Drawing.Size(536, 366);
             this.tabControl.TabIndex = 0;
             // 
             // tabGeneral
             // 
             this.tabGeneral.BackColor = System.Drawing.SystemColors.Control;
+            this.tabGeneral.Controls.Add(this.labelTips);
             this.tabGeneral.Controls.Add(this.groupBox4);
+            this.tabGeneral.Controls.Add(this.buttonClose);
             this.tabGeneral.Controls.Add(this.checkCustomOSD);
             this.tabGeneral.Controls.Add(this.groupOSD);
             this.tabGeneral.Controls.Add(this.groupBox2);
             this.tabGeneral.Location = new System.Drawing.Point(4, 22);
             this.tabGeneral.Margin = new System.Windows.Forms.Padding(2);
             this.tabGeneral.Name = "tabGeneral";
-            this.tabGeneral.Size = new System.Drawing.Size(528, 326);
+            this.tabGeneral.Size = new System.Drawing.Size(528, 340);
             this.tabGeneral.TabIndex = 2;
             this.tabGeneral.Text = "General";
             this.tabGeneral.Enter += new System.EventHandler(this.tabOSD_Enter);
@@ -360,6 +363,7 @@ namespace AudioSwitch.Forms
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.checkDarkTheme);
             this.groupBox2.Controls.Add(this.checkAlwaysVisible);
             this.groupBox2.Controls.Add(this.checkCloseSelect);
             this.groupBox2.Controls.Add(this.comboDefMode);
@@ -375,14 +379,14 @@ namespace AudioSwitch.Forms
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(517, 159);
+            this.groupBox2.Size = new System.Drawing.Size(517, 173);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "General Behavior";
             // 
             // checkAlwaysVisible
             // 
-            this.checkAlwaysVisible.Location = new System.Drawing.Point(277, 17);
+            this.checkAlwaysVisible.Location = new System.Drawing.Point(271, 121);
             this.checkAlwaysVisible.Margin = new System.Windows.Forms.Padding(2);
             this.checkAlwaysVisible.Name = "checkAlwaysVisible";
             this.checkAlwaysVisible.Size = new System.Drawing.Size(201, 23);
@@ -414,7 +418,7 @@ namespace AudioSwitch.Forms
             // checkQSShowOSD
             // 
             this.checkQSShowOSD.AutoSize = true;
-            this.checkQSShowOSD.Location = new System.Drawing.Point(300, 129);
+            this.checkQSShowOSD.Location = new System.Drawing.Point(271, 102);
             this.checkQSShowOSD.Margin = new System.Windows.Forms.Padding(2);
             this.checkQSShowOSD.Name = "checkQSShowOSD";
             this.checkQSShowOSD.Size = new System.Drawing.Size(79, 17);
@@ -424,7 +428,7 @@ namespace AudioSwitch.Forms
             // 
             // radioQuickSwitch
             // 
-            this.radioQuickSwitch.Location = new System.Drawing.Point(283, 86);
+            this.radioQuickSwitch.Location = new System.Drawing.Point(274, 55);
             this.radioQuickSwitch.Margin = new System.Windows.Forms.Padding(2);
             this.radioQuickSwitch.Name = "radioQuickSwitch";
             this.radioQuickSwitch.Size = new System.Drawing.Size(207, 39);
@@ -436,7 +440,7 @@ namespace AudioSwitch.Forms
             // radioAlwaysMenu
             // 
             this.radioAlwaysMenu.Checked = true;
-            this.radioAlwaysMenu.Location = new System.Drawing.Point(283, 61);
+            this.radioAlwaysMenu.Location = new System.Drawing.Point(274, 36);
             this.radioAlwaysMenu.Margin = new System.Windows.Forms.Padding(2);
             this.radioAlwaysMenu.Name = "radioAlwaysMenu";
             this.radioAlwaysMenu.Size = new System.Drawing.Size(140, 24);
@@ -448,7 +452,7 @@ namespace AudioSwitch.Forms
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(274, 47);
+            this.label5.Location = new System.Drawing.Point(271, 21);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(149, 13);
@@ -504,7 +508,7 @@ namespace AudioSwitch.Forms
             this.tabPlaybackDevices.Margin = new System.Windows.Forms.Padding(2);
             this.tabPlaybackDevices.Name = "tabPlaybackDevices";
             this.tabPlaybackDevices.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPlaybackDevices.Size = new System.Drawing.Size(528, 326);
+            this.tabPlaybackDevices.Size = new System.Drawing.Size(528, 340);
             this.tabPlaybackDevices.TabIndex = 1;
             this.tabPlaybackDevices.Text = "Playback Devices";
             this.tabPlaybackDevices.Enter += new System.EventHandler(this.tabDevices_Enter);
@@ -515,7 +519,7 @@ namespace AudioSwitch.Forms
             this.tabRecordingDevices.Controls.Add(this.recordingDevices);
             this.tabRecordingDevices.Location = new System.Drawing.Point(4, 22);
             this.tabRecordingDevices.Name = "tabRecordingDevices";
-            this.tabRecordingDevices.Size = new System.Drawing.Size(528, 326);
+            this.tabRecordingDevices.Size = new System.Drawing.Size(528, 340);
             this.tabRecordingDevices.TabIndex = 3;
             this.tabRecordingDevices.Text = "Recording devices";
             this.tabRecordingDevices.Enter += new System.EventHandler(this.tabDevices_Enter);
@@ -528,7 +532,7 @@ namespace AudioSwitch.Forms
             this.tabHotkeys.Margin = new System.Windows.Forms.Padding(2);
             this.tabHotkeys.Name = "tabHotkeys";
             this.tabHotkeys.Padding = new System.Windows.Forms.Padding(2);
-            this.tabHotkeys.Size = new System.Drawing.Size(528, 326);
+            this.tabHotkeys.Size = new System.Drawing.Size(528, 340);
             this.tabHotkeys.TabIndex = 0;
             this.tabHotkeys.Text = "Hot Keys";
             this.tabHotkeys.Enter += new System.EventHandler(this.tabHotkeys_Enter);
@@ -559,12 +563,12 @@ namespace AudioSwitch.Forms
             this.gridHotkeys.Name = "gridHotkeys";
             this.gridHotkeys.RowHeadersWidth = 25;
             this.gridHotkeys.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.gridHotkeys.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.gridHotkeys.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gridHotkeys.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.gridHotkeys.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridHotkeys.Size = new System.Drawing.Size(520, 319);
@@ -633,7 +637,7 @@ namespace AudioSwitch.Forms
             // 
             // buttonClose
             // 
-            this.buttonClose.Location = new System.Drawing.Point(367, 313);
+            this.buttonClose.Location = new System.Drawing.Point(361, 302);
             this.buttonClose.Margin = new System.Windows.Forms.Padding(2);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(160, 32);
@@ -646,13 +650,23 @@ namespace AudioSwitch.Forms
             // 
             this.labelTips.BackColor = System.Drawing.Color.Transparent;
             this.labelTips.ForeColor = System.Drawing.Color.Green;
-            this.labelTips.Location = new System.Drawing.Point(13, 320);
+            this.labelTips.Location = new System.Drawing.Point(12, 309);
             this.labelTips.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTips.Name = "labelTips";
             this.labelTips.Size = new System.Drawing.Size(345, 18);
             this.labelTips.TabIndex = 11;
             this.labelTips.Text = "labelTips";
             this.labelTips.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // checkDarkTheme
+            // 
+            this.checkDarkTheme.Location = new System.Drawing.Point(12, 144);
+            this.checkDarkTheme.Margin = new System.Windows.Forms.Padding(2);
+            this.checkDarkTheme.Name = "checkDarkTheme";
+            this.checkDarkTheme.Size = new System.Drawing.Size(186, 24);
+            this.checkDarkTheme.TabIndex = 28;
+            this.checkDarkTheme.Text = "Dark Theme";
+            this.checkDarkTheme.UseVisualStyleBackColor = true;
             // 
             // playbackDevices
             // 
@@ -676,9 +690,7 @@ namespace AudioSwitch.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(538, 356);
-            this.Controls.Add(this.labelTips);
-            this.Controls.Add(this.buttonClose);
+            this.ClientSize = new System.Drawing.Size(538, 369);
             this.Controls.Add(this.tabControl);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -761,5 +773,6 @@ namespace AudioSwitch.Forms
         private Devices recordingDevices;
         private System.Windows.Forms.Label labelTips;
         private System.Windows.Forms.CheckBox checkAlwaysVisible;
+        private System.Windows.Forms.CheckBox checkDarkTheme;
     }
 }
