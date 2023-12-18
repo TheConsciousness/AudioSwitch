@@ -448,6 +448,14 @@ namespace AudioSwitch.Forms
                 this.BackColor = Color.FromArgb(18, 18, 18);
                 listDevices.BackColor = Color.FromArgb(18, 18, 18);
                 listDevices.ForeColor = Color.White;
+            } else
+            {
+                ledLeft.BackColor = SystemColors.Control;
+                ledRight.BackColor = SystemColors.Control;
+                VolBar.BackColor = SystemColors.Control;
+                this.BackColor = SystemColors.Control;
+                listDevices.BackColor = SystemColors.Window;
+                listDevices.ForeColor = Color.Black;
             }
 
             SetSizes();

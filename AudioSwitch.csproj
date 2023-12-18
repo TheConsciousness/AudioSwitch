@@ -310,7 +310,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="AudioSwitch_TemporaryKey.pfx" />
     <None Include="Resources\shadow.png" />
     <Content Include="Skins\Default\back.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

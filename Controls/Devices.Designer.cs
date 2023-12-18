@@ -64,6 +64,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.checkEnableAsCommunicationsOnStartup);
             this.groupBox1.Controls.Add(this.checkEnableAsMultimediaOnStartup);
             this.groupBox1.Controls.Add(this.checkCustomName);
@@ -80,10 +83,10 @@
             this.groupBox1.Controls.Add(this.trackSaturation);
             this.groupBox1.Controls.Add(this.trackHue);
             this.groupBox1.Location = new System.Drawing.Point(200, 2);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(321, 279);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Size = new System.Drawing.Size(350, 279);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Selected Device Settings";
@@ -91,7 +94,7 @@
             // checkEnableAsCommunicationsOnStartup
             // 
             this.checkEnableAsCommunicationsOnStartup.Location = new System.Drawing.Point(14, 184);
-            this.checkEnableAsCommunicationsOnStartup.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkEnableAsCommunicationsOnStartup.Margin = new System.Windows.Forms.Padding(2);
             this.checkEnableAsCommunicationsOnStartup.Name = "checkEnableAsCommunicationsOnStartup";
             this.checkEnableAsCommunicationsOnStartup.Size = new System.Drawing.Size(285, 16);
             this.checkEnableAsCommunicationsOnStartup.TabIndex = 28;
@@ -101,7 +104,7 @@
             // checkEnableAsMultimediaOnStartup
             // 
             this.checkEnableAsMultimediaOnStartup.Location = new System.Drawing.Point(14, 164);
-            this.checkEnableAsMultimediaOnStartup.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkEnableAsMultimediaOnStartup.Margin = new System.Windows.Forms.Padding(2);
             this.checkEnableAsMultimediaOnStartup.Name = "checkEnableAsMultimediaOnStartup";
             this.checkEnableAsMultimediaOnStartup.Size = new System.Drawing.Size(263, 16);
             this.checkEnableAsMultimediaOnStartup.TabIndex = 27;
@@ -111,7 +114,7 @@
             // checkCustomName
             // 
             this.checkCustomName.Location = new System.Drawing.Point(14, 109);
-            this.checkCustomName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkCustomName.Margin = new System.Windows.Forms.Padding(2);
             this.checkCustomName.Name = "checkCustomName";
             this.checkCustomName.Size = new System.Drawing.Size(149, 18);
             this.checkCustomName.TabIndex = 3;
@@ -122,7 +125,7 @@
             // pictureModded
             // 
             this.pictureModded.Location = new System.Drawing.Point(288, 15);
-            this.pictureModded.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureModded.Margin = new System.Windows.Forms.Padding(2);
             this.pictureModded.Name = "pictureModded";
             this.pictureModded.Size = new System.Drawing.Size(24, 24);
             this.pictureModded.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -133,7 +136,7 @@
             // 
             this.textCustomName.Enabled = false;
             this.textCustomName.Location = new System.Drawing.Point(14, 131);
-            this.textCustomName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textCustomName.Margin = new System.Windows.Forms.Padding(2);
             this.textCustomName.Name = "textCustomName";
             this.textCustomName.Size = new System.Drawing.Size(190, 20);
             this.textCustomName.TabIndex = 4;
@@ -150,7 +153,7 @@
             // checkHideDevice
             // 
             this.checkHideDevice.Location = new System.Drawing.Point(4, 255);
-            this.checkHideDevice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkHideDevice.Margin = new System.Windows.Forms.Padding(2);
             this.checkHideDevice.Name = "checkHideDevice";
             this.checkHideDevice.Size = new System.Drawing.Size(177, 16);
             this.checkHideDevice.TabIndex = 5;
@@ -187,7 +190,7 @@
             // buttonRemove
             // 
             this.buttonRemove.Location = new System.Drawing.Point(108, 207);
-            this.buttonRemove.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonRemove.Margin = new System.Windows.Forms.Padding(2);
             this.buttonRemove.Name = "buttonRemove";
             this.buttonRemove.Size = new System.Drawing.Size(100, 33);
             this.buttonRemove.TabIndex = 6;
@@ -198,7 +201,7 @@
             // buttonSave
             // 
             this.buttonSave.Location = new System.Drawing.Point(212, 207);
-            this.buttonSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonSave.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(100, 33);
             this.buttonSave.TabIndex = 7;
@@ -210,7 +213,7 @@
             // 
             this.trackBrightness.BackColor = System.Drawing.SystemColors.Control;
             this.trackBrightness.Location = new System.Drawing.Point(70, 70);
-            this.trackBrightness.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.trackBrightness.Margin = new System.Windows.Forms.Padding(2);
             this.trackBrightness.Maximum = 60;
             this.trackBrightness.Name = "trackBrightness";
             this.trackBrightness.Size = new System.Drawing.Size(131, 45);
@@ -222,7 +225,7 @@
             // 
             this.trackSaturation.BackColor = System.Drawing.SystemColors.Control;
             this.trackSaturation.Location = new System.Drawing.Point(70, 49);
-            this.trackSaturation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.trackSaturation.Margin = new System.Windows.Forms.Padding(2);
             this.trackSaturation.Maximum = 100;
             this.trackSaturation.Name = "trackSaturation";
             this.trackSaturation.Size = new System.Drawing.Size(131, 45);
@@ -234,7 +237,7 @@
             // 
             this.trackHue.BackColor = System.Drawing.SystemColors.Control;
             this.trackHue.Location = new System.Drawing.Point(70, 29);
-            this.trackHue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.trackHue.Margin = new System.Windows.Forms.Padding(2);
             this.trackHue.Maximum = 360;
             this.trackHue.Name = "trackHue";
             this.trackHue.Size = new System.Drawing.Size(131, 45);
@@ -244,8 +247,8 @@
             // 
             // listDevices
             // 
-            this.listDevices.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.listDevices.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.listDevices.BackColor = System.Drawing.SystemColors.Control;
             this.listDevices.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listDevices.FullRowSelect = true;
@@ -269,7 +272,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.groupBox1);
             this.Name = "Devices";
-            this.Size = new System.Drawing.Size(528, 319);
+            this.Size = new System.Drawing.Size(571, 319);
             this.Load += new System.EventHandler(this.Devices_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
