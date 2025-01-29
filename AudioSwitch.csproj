@@ -8,7 +8,11 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <AssemblyName>AudioSwitch</AssemblyName>
     <OutputType>WinExe</OutputType>
+<<<<<<< Updated upstream
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+=======
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+>>>>>>> Stashed changes
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
     <IsWebBootstrapper>false</IsWebBootstrapper>
